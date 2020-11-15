@@ -1,4 +1,6 @@
 # URLSearchParams-to-Object
+URLSearchParams to object converter function is very handy in front-end. 
+it can handle multilevel query params like param1[element][1]=value1&param1[element][2]=value2
 
 ```
 var getParamsAsObject = function (query) {
@@ -51,7 +53,7 @@ var getParamsAsObject = function (query) {
 
 ```js
 
-                var url = new URL(window.location.href);
+   var url = new URL(window.location.href);
                 
-                var obj = getParamsAsObject(url.search);
+   var obj = getParamsAsObject(url.search);
 ```
