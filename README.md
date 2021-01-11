@@ -7,7 +7,7 @@ var getParamsAsObject = function (url) {
         var res = {};
         
         for (let searchParam of url.searchParams.entries()) {
-          res[i[0]] = i[1];
+          res[searchParam[0]] = searchParam[1];
         }
         
         return res;
